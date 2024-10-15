@@ -4,6 +4,11 @@ out = "out"
 libs = ["lib"]
 ffi = true
 
+fs_permissions = [
+    { access = "read", path = "./broadcast" },
+    { access = "read", path = "./reports" },
+]
+
 remappings = [
     "@OpenZeppelin/openzeppelin-contracts-upgradeable/contracts=lib/openzeppelin-contracts-upgradeable/contracts",
     "@OpenZeppelin/openzeppelin-contracts/contracts=lib/openzeppelin-contracts/contracts",
